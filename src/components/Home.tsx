@@ -10,8 +10,8 @@ const Home = () => {
   const dispatch = useDispatch();
   return !weatherDetails?.length ? (
     <div className='max-w-md'>
-      <h1 className='mb-5 text-5xl font-bold'>Weather Desk</h1>
-      <p className='mb-5'>
+      <h1 className='mb-5 text-5xl font-bold text-white'>Weather Desk</h1>
+      <p className='mb-5 text-white'>
         Weather Desk is a weather app that provides detailed and accurate
         weather forecasts for locations around the world.
       </p>
