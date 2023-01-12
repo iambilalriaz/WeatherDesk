@@ -5,7 +5,7 @@ const WeatherDeatils = () => {
   const weatherDetails = useSelector(weatherSelector)?.weatherDetails?.[0];
   const selectedCity = useSelector(selectedCitySelector);
   return (
-    <div className='card w-full sm:max-w-[70%] bg-base-100 shadow-xl text-black'>
+    <div className='card w-full sm:max-w-[70%] bg-white shadow-xl text-black '>
       <div className='card-body'>
         <div>
           <p className='text-[#a3a1a1] mb-2'>{selectedCity?.name}</p>
