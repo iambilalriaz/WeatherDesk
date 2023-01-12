@@ -27,6 +27,7 @@ const SearchCity = () => {
   };
   return (
     <ReactSearchAutocomplete
+      placeholder='Enter city name...'
       items={cities?.map((city) => ({
         id: +city?.Key,
         name: `${city?.LocalizedName},  ${city?.AdministrativeArea?.LocalizedName}, ${city?.Country?.LocalizedName}`,
