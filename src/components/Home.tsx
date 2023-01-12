@@ -3,6 +3,7 @@ import { setInputEnabled } from '../app/slices/inputEnabledSlice';
 import { inputEnabledSelector, weatherSelector } from '../app/stateSelectors';
 import SearchCity from './SearchCity';
 import WeatherDeatils from './WeatherDeatils';
+import logo from '../assets/weather.svg';
 const Home = () => {
   const inputEnabled = useSelector(inputEnabledSelector);
   const { weatherDetails } = useSelector(weatherSelector);
@@ -29,7 +30,15 @@ const Home = () => {
       )}
     </div>
   ) : (
-    <WeatherDeatils />
+    <>
+      <div className='bg-white flex justify-start items-center w-full px-4 py-2 absolute top-0 left-0'>
+        <img src={logo} alt='' />{' '}
+        <span className='text-black ml-2 font-semibold text-lg'>
+          Weather Desk
+        </span>
+      </div>
+      <WeatherDeatils />
+    </>
   );
 };
 

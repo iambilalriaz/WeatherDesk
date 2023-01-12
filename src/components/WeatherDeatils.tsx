@@ -23,7 +23,7 @@ const WeatherDeatils = () => {
                   : weatherDetails?.WeatherIcon
               }-s.png`}
             />
-            <p className='flex justify-between w-[20%]'>
+            <p className='flex justify-between w-[50%] sm:w-[40%] md:w-[30%]'>
               <div>
                 <span className='text-xl'>
                   {weatherDetails?.Temperature?.Metric?.Value}
