@@ -21,7 +21,7 @@ const WeatherDeatils = () => {
               width={120}
               alt='weather_icon'
               src={`https://developer.accuweather.com/sites/default/files/${
-                weatherDetails?.WeatherIcon?.toString?.length === 1
+                weatherDetails?.WeatherIcon?.toString()?.length === 1
                   ? `0${weatherDetails?.WeatherIcon}`
                   : weatherDetails?.WeatherIcon
               }-s.png`}
