@@ -32,7 +32,7 @@ const Home = () => {
   ) : (
     <>
       <div className='bg-white flex justify-start items-center w-full px-4 py-2 absolute top-0 left-0'>
-        <img src={logo} alt='' />{' '}
+        <img loading='lazy' src={logo} alt='' />{' '}
         <span className='text-black ml-2 font-semibold text-lg'>
           Weather Desk
         </span>

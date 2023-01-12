@@ -1,9 +1,11 @@
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { setWeatherDetails } from '../app/slices/weatherDetailsSlice';
 import { selectedCitySelector, weatherSelector } from '../app/stateSelectors';
 
 const WeatherDeatils = () => {
   const weatherDetails = useSelector(weatherSelector)?.weatherDetails?.[0];
   const selectedCity = useSelector(selectedCitySelector);
+  const dispatch = useDispatch();
   return (
     <div className='card w-full sm:max-w-[70%] bg-white shadow-xl text-black '>
       <div className='card-body'>
@@ -14,6 +16,7 @@ const WeatherDeatils = () => {
               {weatherDetails?.WeatherText}
             </p>
             <img
+              loading='lazy'
               className='my-2'
               width={120}
               alt='weather_icon'
@@ -49,6 +52,14 @@ const WeatherDeatils = () => {
             Chances of Rain: {weatherDetails?.HasPrecipitation ? 'Yes' : 'No'}
           </div>
         </div>
+      </div>
+      <div
+        className='mb-4'
+        onClick={() => {
+          dispatch(setWeatherDetails([]));
+        }}
+      >
+        <button className='btn btn-primary'>Back</button>
       </div>
     </div>
   );
