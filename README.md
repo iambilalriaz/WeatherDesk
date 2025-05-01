@@ -1,6 +1,6 @@
 # Weather Desk
 
-<div style="display:flex;justify-content:center;margin-bottom:16px"><img src="./src/assets/weather256.png"/></div>
+<div style="display:flex;justify-content:center;margin-bottom:16px"><img src="./src/assets/weather256.png" width="150"/></div>
 
 Weather Desk provides detailed and accurate
 weather forecasts for locations around the world.
