@@ -2,7 +2,7 @@
 
 <div style="display:flex;justify-content:center;margin-bottom:16px"><img src="./src/assets/weather256.png"/></div>
 
-Weather Desk is a weather app that provides detailed and accurate
+Weather Desk provides detailed and accurate
 weather forecasts for locations around the world.
 
 See live [demo](https://weatherdesk.netlify.app)
